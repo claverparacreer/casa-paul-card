@@ -1,4 +1,4 @@
-class SunsynkCardConfigEditor extends HTMLElement {
+class CasaPaulCardConfigEditor extends HTMLElement {
 	constructor() {
 		super()
 		console.log('editor: new instance')
@@ -40,10 +40,10 @@ class SunsynkCardConfigEditor extends HTMLElement {
 	}
 }
 
-class SunsynkCard extends HTMLElement {
+class CasaPaulCard extends HTMLElement {
 
 	static getConfigElement() {
-		return document.createElement('sunsynk-card-config-editor')
+		return document.createElement('casa-paul-card-config-editor')
 	}
 
 	static getStubConfig() {
@@ -155,12 +155,12 @@ class SunsynkCard extends HTMLElement {
 	}
 }
 
-customElements.define('sunsynk-card-config-editor', SunsynkCardConfigEditor)
-customElements.define('sunsynk-card', SunsynkCard)
+customElements.define('casa-paul-card-config-editor', CasaPaulCardConfigEditor)
+customElements.define('casa-paul-card', CasaPaulCard)
 
 window.customCards = window.customCards || []
 window.customCards.push({
-	type: 'sunsynk-card',
-	name: 'Sunsynk Card'
+	type: 'casa-paul-card',
+	name: 'CasaPaul Card'
 })
-console.log('Custom Element: SUNSYNK-CARD initialized.')
+console.log('Custom Element: CasaPaul-CARD initialized.')
